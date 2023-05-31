@@ -12,7 +12,7 @@
     <form action="">
         <input type="name" nome="usuario" id="user" placeholder="nome de usuario" required>
         <input type="password" name="senha" id="senha" placeholder="senha" required>
-        <button onclick="login()">ENTRAR</button>
+        <button onclick="login(); return false">ENTRAR</button>
     </form>
     <script>
         function login(){
@@ -21,6 +21,7 @@
 
             if(user == "123" && senha == "asd"){
             alert("você esta prestes a logar!");
+            location.href= "pagina2.html";
 
             }else{
                 alert("algo deu errado, verifique seu usuario ou senha!");
